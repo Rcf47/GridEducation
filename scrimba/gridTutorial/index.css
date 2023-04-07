@@ -28,7 +28,7 @@
   grid-column: 2 / -1;
 } */
 
-/* positiong with grid template area */
+/* positiong with grid template area 
 
   .container {
     height: 100%;
@@ -58,4 +58,13 @@
 
 .footer {
   grid-area: f;
+}
+*/
+
+  /* auto fit and minmax */
+  .container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
 }
